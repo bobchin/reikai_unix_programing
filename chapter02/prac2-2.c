@@ -3,9 +3,9 @@
 
 int main(void)
 {
-  struct termios *tp;
+  struct termios t;
   /* 端末の設定をtpが指す構造体に取得 */
-  tcgetattr(STDIN_FILENO, tp);
+  tcgetattr(STDIN_FILENO, &t);
 
   return 0;
 }
