@@ -2,7 +2,7 @@
 
 char *itoa(int i)
 {
-  char buf[1024];
+  static char buf[1024];
   snprintf(buf, sizeof(buf), "%d", i);
   return buf;
 }
