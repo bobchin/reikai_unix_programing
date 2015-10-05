@@ -1,7 +1,7 @@
 all: clean
 
 clean:
-	rm -rf example1-2 example1-3 example1-4 example1-5\
+	rm -rf example1-2 example1-3 example1-4 example1-5 example1-6\
 	  prac1-5 prac1-7 prac1-8 prac1-9 prac1-10 prac1-11 prac1-12 prac1-13
 
 example1-2: example1-2.c
@@ -15,6 +15,9 @@ example1-4: example1-4.c
 
 example1-5: example1-5.c
 	gcc example1-5.c -o example1-5
+
+example1-6: example1-6.c
+	gcc example1-6.c -o example1-6
 
 prac1-5: prac1-5.c
 	gcc prac1-5.c -o prac1-5
