@@ -7,6 +7,7 @@ struct point {
 
 int point_is_equal(struct point *, struct point *);
 
+
 int main(void)
 {
   struct point z1 = { 100, 200 };

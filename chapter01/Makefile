@@ -22,8 +22,14 @@ prac1-5: prac1-5.c
 prac1-7: prac1-7.c
 	gcc prac1-7.c -o prac1-7
 
+prac1-8: prac1-8.c
+	gcc prac1-8.c -o prac1-8
+
 prac1-9: prac1-9.c
 	gcc prac1-9.c -o prac1-9
 
 prac1-10: prac1-10.c
 	gcc prac1-10.c -o prac1-10
+
+prac1-11: prac1-11.c
+	gcc prac1-11.c -o prac1-11
