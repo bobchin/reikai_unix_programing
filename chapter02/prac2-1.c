@@ -1,7 +1,9 @@
+#include <stdio.h>
 
 int main(void)
 {
-  char *p;
+  char c, *p;
+  p = &c;
   *p = 'A';
 
   printf("%c\n", *p);
