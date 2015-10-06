@@ -1,7 +1,8 @@
 all: clean
 
 clean:
-	rm -rf prac2-1 prac2-2 prac2-3 prac2-4 prac2-5 prac2-6
+	rm -rf prac2-1 prac2-2 prac2-3 prac2-4 prac2-5 prac2-6 \
+	       prac2-7
 
 prac2-1: prac2-1.c
 	gcc prac2-1.c -o prac2-1
@@ -20,3 +21,6 @@ prac2-5: prac2-5.c
 
 prac2-6: prac2-6.c
 	gcc prac2-6.c -o prac2-6
+
+prac2-7: prac2-7.c
+	gcc prac2-7.c -o prac2-7
