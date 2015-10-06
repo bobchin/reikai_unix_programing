@@ -1,17 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 10
-
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-  int i, data[N];
-  if (argc - 1 > N) {
-    exit(1);
-  }
+  int i, *data;
+
+  data = malloc(sizeof(int) * (argc - 1));
+
   for (i = 1; i < argc; i++) {
     data[i - 1] = atoi(argv[i]);
   }
+
+  for (i = 1; i < argc; i++) {
+    printf("%d\n", data[i - 1]);
+  }
+
+  free(data);
 
   return 0;
 }
