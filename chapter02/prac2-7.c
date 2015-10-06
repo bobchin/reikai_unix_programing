@@ -10,8 +10,8 @@ int main(void)
   int *q = &p->x;
   p->x = 10;
   p->y = 20;
-  free(p);
   printf("%d\n", *q);
+  free(p);
 
   return 0;
 }
