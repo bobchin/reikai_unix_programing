@@ -5,7 +5,7 @@ CFLAGS=
 all: clean
 
 clean:
-	rm -rf exam2-6 exam2-7\
+	rm -rf exam2-6 exam2-7 exam2-12\
 	       prac2-1 prac2-2 prac2-3 prac2-4 prac2-5 prac2-6 \
 	       prac2-7 prac2-8 prac2-9 prac2-10 prac2-15 prac2-16 \
 				 prac2-17
@@ -14,6 +14,9 @@ exam2-6: exam2-6.c
 	$(CC) $(CFLAGS) $@.c -o $@
 
 exam2-7: exam2-7.c
+	$(CC) $(CFLAGS) $@.c -o $@
+
+exam2-12: exam2-12.c
 	$(CC) $(CFLAGS) $@.c -o $@
 
 prac2-1: prac2-1.c
