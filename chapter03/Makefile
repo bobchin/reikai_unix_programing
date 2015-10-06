@@ -4,10 +4,14 @@ CFLAGS=
 all: clear
 
 clear:
-	rm -rf prac3-1 prac3-2 empty.file
+	rm -rf exam3-1 \
+	       prac3-1 prac3-2 empty.file
 
-exam3-1:
+exam3-0:
 	od -c hello.txt
+
+exam3-1: exam3-1.c
+	$(CC) $(CFLAGS) $@.c -o $@
 
 prac3-1: prac3-1.c
 	$(CC) $(CFLAGS) $@.c -o $@
