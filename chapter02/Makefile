@@ -1,29 +1,36 @@
+
+CC=gcc
+CFLAGS=
+
 all: clean
 
 clean:
 	rm -rf prac2-1 prac2-2 prac2-3 prac2-4 prac2-5 prac2-6 \
-	       prac2-7 prac2-8
+	       prac2-7 prac2-8 prac2-9
 
 prac2-1: prac2-1.c
-	gcc prac2-1.c -o prac2-1
+	$(CC) $(CFLAGS) $@.c -o $@
 
 prac2-2: prac2-2.c
-	gcc prac2-2.c -o prac2-2
+	$(CC) $(CFLAGS) $@.c -o $@
 
 prac2-3: prac2-3.c
-	gcc prac2-3.c -o prac2-3
+	$(CC) $(CFLAGS) $@.c -o $@
 
 prac2-4: prac2-4.c
-	gcc prac2-4.c -o prac2-4
+	$(CC) $(CFLAGS) $@.c -o $@
 
 prac2-5: prac2-5.c
-	gcc prac2-5.c -o prac2-5
+	$(CC) $(CFLAGS) $@.c -o $@
 
 prac2-6: prac2-6.c
-	gcc prac2-6.c -o prac2-6
+	$(CC) $(CFLAGS) $@.c -o $@
 
 prac2-7: prac2-7.c
-	gcc prac2-7.c -o prac2-7
+	$(CC) $(CFLAGS) $@.c -o $@
 
 prac2-8: prac2-8.c
-	gcc prac2-8.c -o prac2-8
+	$(CC) $(CFLAGS) $@.c -o $@
+
+prac2-9: prac2-9.c
+	$(CC) $(CFLAGS) $@.c -o $@
