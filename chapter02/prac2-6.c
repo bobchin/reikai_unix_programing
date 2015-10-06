@@ -22,6 +22,7 @@ int main(void)
     new = make_point(x, y);
     printf("(%d, %d)\n", new->x, new->y);
     x++, y++;
+    free(new);
   }
 
   return 0;
