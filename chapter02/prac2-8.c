@@ -2,13 +2,13 @@
 
 int main(int argc, char *argv[])
 {
-  char buf[1024];
+  char buf[BUFSIZ];
   printf("Please type your name: ");
-  gets(buf);
-  printf("hello, %s\n", buf);
+  fgets(buf, sizeof(buf), stdin);
+  printf("hello, %s", buf);
 
 
-  sprintf(buf, "%s", argv[0]);
+  snprintf(buf, sizeof(buf), "%s", argv[0]);
   printf("%s\n", buf);
 
   return 0;
