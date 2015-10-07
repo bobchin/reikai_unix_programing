@@ -1,0 +1,7 @@
+2015/10/05 100.00 food and drink
+2015/10/05 500.00 books
+2015/10/06 200.00 food and drink
+2015/10/06 300.00 books
+2015/10/06 23.00 misc
+2015/10/07 600.00 food and drink
+2015/10/07 100.00 magazines
